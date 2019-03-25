@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>elasticsearch-script</groupId>
+    <groupId>org.quicksandzn</groupId>
     <artifactId>elasticsearch-script</artifactId>
     <version>1.0.0</version>
 
@@ -18,7 +18,7 @@
         <elasticsearch.assembly.descriptor>${project.basedir}/src/main/assemblies/plugin.xml
         </elasticsearch.assembly.descriptor>
         <elasticsearch.plugin.name>elasticsearch-script</elasticsearch.plugin.name>
-        <elasticsearch.plugin.classname>elasticsearch.script.SampleScriptPlugin</elasticsearch.plugin.classname>
+        <elasticsearch.plugin.classname>org.quicksandzn.elasticsearch.script.SampleScriptPlugin</elasticsearch.plugin.classname>
         <elasticsearch.plugin.jvm>true</elasticsearch.plugin.jvm>
     </properties>
 

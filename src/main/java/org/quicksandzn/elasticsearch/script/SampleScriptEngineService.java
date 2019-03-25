@@ -1,4 +1,4 @@
-package elasticsearch.script;
+package org.quicksandzn.elasticsearch.script;
 
 
 import org.apache.lucene.index.LeafReaderContext;

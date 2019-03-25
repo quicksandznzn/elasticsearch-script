@@ -17,7 +17,7 @@ public class SampleScriptEngineService implements ScriptEngineService {
 
     @Override
     public String getType() {
-        return "city_script";
+        return "sample_script";
     }
 
     /**
@@ -30,7 +30,7 @@ public class SampleScriptEngineService implements ScriptEngineService {
      */
     @Override
     public Object compile(String scriptName, String scriptSource, Map<String, String> params) {
-        if ("name_sort".equals(scriptSource)) {
+        if ("field_value_len_sort".equals(scriptSource)) {
             return scriptSource;
         }
         throw new IllegalArgumentException("Unknown script name " + scriptSource);

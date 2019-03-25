@@ -2,7 +2,7 @@
 
 
 
--- elasticsearch 5.6.14
+-- elasticsearch version 5.6.14
 
 
 1. mvn clean install

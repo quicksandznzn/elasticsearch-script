@@ -4,6 +4,9 @@
 
 -- elasticsearch 5.6.14
 
+~~implements NativeScriptFactory~~
+
+implements ScriptEngineService
 
 1. mvn clean install
 

@@ -11,23 +11,22 @@ elasticsearch-script
 3、brew services restart elasticsearch@5.6
 
 4、
-{
-      "query":{
-          "function_score":{
-              "query":{
-                  "match_all":{
 
-                  }
-              },
-              "script_score":{
-                  "script":{
-                      "source":"field_value_len_sort",
-                      "lang":"sample_script",
-                      "params":{
-                          "field":"name"
-                      }
-                  }
-              }
-          }
-      }
- }
+{
+    "query":{
+        "function_score":{
+            "query":{
+                "match_all":{}
+            },
+            "script_score":{
+                "script":{
+                    "source":"field_value_len_sort",
+                    "lang":"sample_script",
+                    "params":{
+                        "field":"name"
+                    }
+                }
+            }
+        }
+    }
+}

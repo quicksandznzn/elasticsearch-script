@@ -44,7 +44,7 @@ public class SampleScriptEngineService implements ScriptEngineService {
     @Override
     public SearchScript search(CompiledScript compiledScript, SearchLookup lookup, Map<String, Object> vars) {
         final String field;
-        if (vars == null || vars.containsKey("field") == false) {
+        if (vars == null || !vars.containsKey("field")) {
             throw new IllegalArgumentException("Missing parameter [field]");
         } else {
             field = (String) vars.get("field");
